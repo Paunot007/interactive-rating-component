@@ -1,11 +1,10 @@
 const mainContainer = document.querySelector(".container");
 const thanksContainer = document.querySelector(".thank-you");
-const submitButton = document.getElementById("submit"); // Updated ID
+const submitButton = document.getElementById("submit");
 const rateAgain = document.getElementById("rate-again");
 const ratings = document.querySelectorAll(".btn");
 const actualRating = document.getElementById("rating");
 
-// Set up the ratings buttons event listeners
 ratings.forEach((rating) => {
   rating.addEventListener("click", () => {
     actualRating.innerHTML = rating.innerHTML;
